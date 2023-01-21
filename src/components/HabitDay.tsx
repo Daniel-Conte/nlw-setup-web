@@ -28,7 +28,7 @@ function HabitDay({ date, amount = 0, defaultCompleted = 0 }: HabitDayProps) {
     <Popover.Root>
       <Popover.Trigger
         className={clsx(
-          "w-10 h-10 border-2 rounded-lg", // Fixo
+          "w-10 h-10 border-2 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-violet-700 focus:ring-offset-2 focus:ring-offset-background", // Fixo
           {
             // Aplica as classes das keys somente quando o value for true
             "bg-zinc-900 border-zinc-800": completedPercentage === 0,
